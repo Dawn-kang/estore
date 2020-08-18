@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+  "-//mybatis.org//DTD Mapper 3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.estore.dao.OrderFormMapper">
+	<!-- 插入订单信息 -->
+	<insert id="insertOrderForm" parameterType="OrderForm">
+		insert into es_orderform(id,cost,orderDate,customer_id,shopAddress_id)
+		values(#{id},#{cost},#{orderDate},#{customer.id},#{shopAddress.id})
+	</insert>
+</mapper>

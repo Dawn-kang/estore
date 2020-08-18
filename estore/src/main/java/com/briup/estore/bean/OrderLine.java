@@ -1,0 +1,63 @@
+package com.briup.estore.bean;
+
+/**
+ * 订单项类
+ */
+public class OrderLine {
+	private Integer id;
+	private Integer num;
+	private Double cost;
+	private Book book;
+	private OrderForm form;
+
+	public OrderLine() {
+		super();
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getNum() {
+		return num;
+	}
+
+	public void setNum(Integer num) {
+		this.num = num;
+	}
+
+	public Double getCost() {
+		return cost;
+	}
+
+	public void setCost(Double cost) {
+		this.cost = cost;
+	}
+
+	public Book getBook() {
+		return book;
+	}
+
+	public void setBook(Book book) {
+		this.book = book;
+	}
+	
+	public OrderForm getForm() {
+		return form;
+	}
+
+	public void setForm(OrderForm form) {
+		this.form = form;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderLine [id=" + id + ", num=" + num + ", cost=" + cost + ", book=" + book + ", form=" + form + "]";
+	}
+
+
+}
